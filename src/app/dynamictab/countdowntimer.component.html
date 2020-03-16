@@ -1,0 +1,29 @@
+<div class="timer-container d-flex justify-content-center align-items-center row">
+    <div class="timer">
+      <span #minutes>{{min}}</span>
+      <span>:</span>
+      <span #seconds>{{sec}}</span>
+    </div>
+    <button (click)="cancelsessionTimeout()">Cancel Timer</button>
+  </div>
+  
+  <style>
+    @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+  
+    .timer-container {
+      height: 100vh;
+      font-size: 8rem;
+      color: #555;
+    }
+  
+    .timer {
+      transition: background 0.35s;
+      padding: 0.5em;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  
+    .timer:hover {
+      background: #efefef;
+    }
+  </style>
